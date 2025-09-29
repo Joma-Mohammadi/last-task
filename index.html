@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="font-sans text-gray-800">
+
+  
+  <nav class="bg-black text-white fixed w-full top-0 left-0 z-50 shadow">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="font-bold text-xl">Next1Code</span>
+
+      
+      <ul class="hidden md:flex space-x-8">
+        <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+
+      
+      <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
+        <span class="w-6 h-0.5 bg-white"></span>
+        <span class="w-6 h-0.5 bg-white"></span>
+        <span class="w-6 h-0.5 bg-white"></span>
+      </button>
+    </div>
+   
+
+    
+    <ul id="menu" class="hidden md:hidden bg-black/90 px-6 py-4 space-y-4">
+      <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+      <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+      <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+    </ul>
+  </nav>
+
+ 
+  <header id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center px-6">
+    <div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+      <p class="text-lg md:text-xl">I build modern, responsive web applications.</p>
+    </div>
+  </header>
+
+
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x200" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Project 1</h3>
+            <p class="text-gray-600">Short description of project 1.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x200" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Project 2</h3>
+            <p class="text-gray-600">Short description of project 2.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x200" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Project 3</h3>
+            <p class="text-gray-600">Short description of project 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+      <form id="contactForm" class="bg-white shadow-lg rounded-lg p-6 space-y-4">
+        <input type="text" id="name" placeholder="Name" class="w-full border p-3 rounded">
+        <p id="error-name" class="text-red-500 text-sm hidden"></p>
+
+        <input type="email" id="email" placeholder="Email" class="w-full border p-3 rounded">
+        <p id="error-email" class="text-red-500 text-sm hidden"></p>
+
+        <textarea id="message" placeholder="Message" rows="5" class="w-full border p-3 rounded"></textarea>
+        <p id="error-message" class="text-red-500 text-sm hidden"></p>
+
+        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+ 
+  <footer class="bg-black text-white py-6">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <span>&copy; <span id="year"></span> Next1Code</span>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-gray-400">Twitter</a>
+        <a href="#" class="hover:text-gray-400">LinkedIn</a>
+        <a href="#" class="hover:text-gray-400">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<script src="last-project.js"></script>
