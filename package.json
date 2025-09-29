@@ -2,7 +2,7 @@
   "name": "profile-card",
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^4.1.13"
